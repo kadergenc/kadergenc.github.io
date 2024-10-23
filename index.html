@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kader Genç</title>
+
+    <!-- https://github.com/cognitom/paper-css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.4.1/paper.css">
+    <style>@page { size: A4 }</style>
+
+    <!-- Custom styles for this document -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap');
+
+        body {
+            font-size: 0.9em;
+            /* font-family: 'Saira Condensed', sans-serif; */
+            /* font-family: 'Roboto', sans-serif; */
+            font-family: 'IBM Plex Sans Condensed', sans-serif;
+        }
+
+        .group h1 {
+            font-size: 1.7em;
+            border-bottom: 1.7px solid #808486;
+        }
+
+        .group-instance h2 {
+            font-size: 1.1em;
+            line-height: 0%;
+            margin-top: 1.2em;
+            margin-bottom: 1em;
+        }
+
+        .group-instance .header {
+            position: relative;
+        }
+
+        .duration {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            display: inline;
+            text-align: right;
+            position: absolute;
+            line-height: 0%;
+            right: 0;
+            top: 0;
+        }
+
+        .quick-info {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .quick-info i {
+            font-size: 1.3rem;
+            vertical-align: middle;
+        }
+
+        .quick-info a {
+            vertical-align: middle;
+            font-family: 'Signika', sans-serif;
+            /* font-family: 'Patua One', cursive; */
+            text-decoration: none;
+        }
+
+        .info-item {
+            padding-right: 0.3rem;
+            display: inline;
+        }
+        .projects li a {
+            font-family: 'Acme', sans-serif;
+            text-decoration: none;
+            /* text-transform: uppercase; */
+        }
+
+        h1, h2 {
+            margin: 0;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .sheet > h1 {
+            text-align: center;
+            font-size: 2.3em;
+        }
+
+        projects ul {
+            margin: 0;
+        }
+
+        ul {
+            /* list-style: inside; */
+            padding-left: 1.7em;
+        }
+
+        h2 > a {
+            text-decoration: none;
+        }
+
+        a {
+            color: #512da8;
+        }
+
+        .duration {
+            color: #8559da;
+            font-weight: bold;
+        }
+
+        .skills strong {
+            font-family: 'Acme', sans-serif;
+            font-weight: normal;
+        }
+
+        ul {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body class="A4">
+
+<section class="sheet padding-10mm">
+
+    <h1>Kader Genc</h1>
+
+    <section class="quick-info">
+        <div class="info-item">
+            <i class="info-item fa fa-github"></i>
+            <a href="https://github.com/kadergenc">github.com/kadergenc</a>
+        </div>
+
+        <div class="info-item">
+            <i class="info-item fa fa-globe"></i>
+            <a href="https://www.linkedin.com/in/kadergenc/">linkedin.com/in/kadergenc/</a>
+        </div>
+
+        <div class="info-item">
+            <i class="info-item fa fa-phone"></i>
+            <a>Will be shared in case of interest</a>
+        </div>
+
+    </section>
+
+    <section class="experience group">
+        <h1>Experience <i class="fa fa-gear"></i></h1>
+
+        <div class="group-instance">
+            <div class="header">
+                <h2>Software Engineer &#8226; <a href="https://www.trendyol.com/">Trendyol</a> &#8226; <i>remote</i></h2>
+                <span class="duration">Jun 2022 - <i>ongoing</i></span>
+            </div>
+
+            <p>
+            <ul>
+                <li>
+                    Working as a fullstack developer using <b>React.js</b>  and <b>Svelte</b> on the frontend and working with several microservices written in <b>node.js</b> (using <b>NestJS</b>) and <b>Kotlin</b>/<b>Java</b> (using <b>Spring</b>) on the backend. Databases involved are <b>Couchbase</b> and <b>PostgreSQL</b>.
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    Working on real-time, high-throughput event processing systems using <b>Kafka Streams</b>. Designing and implementing resilient, self-healing, anti-fragile systems from ground-up.
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="group-instance">
+            <div class="header">
+                <h2>Researcher &#8226; <a href="https://atasam.atauni.edu.tr/dag/">Turkey National Observatories</a> &#8226; <i>Erzurum, Turkey</i></h2>
+                <span class="duration">Sept 2021 - Jun 2022</span>
+            </div>
+
+            <p>
+            <ul>
+                <li>
+                    I completed my final year undergraduate graduation project at the Eastern Anatolia Observatory, where I focused on developing the OPC UA integration project for DAG-MAM systems.
+                </li>
+                <li>
+                    Specifically, I created automation software for the telescope sub-devices within the DAG project, utilizing a combination of <b>C++</b> and <b>Python</b> programming languages.
+                </li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="group-instance">
+            <div class="header">
+                <h2>Researcher &#8226; <a href="https://veri.atauni.edu.tr/">Atatürk University Big Data Management Office</a> &#8226; <i>Erzurum,Turkey</i></h2>
+                <span class="duration">Sept 2021 - Jun 2022</span>
+            </div>
+
+            <p>
+            <ul>
+                <li>
+                    At Atatürk University, I handled data submission to international ranking organizations. Throughout this process, my responsibilities included collecting the required data, processing it using <b>Python</b>, and ensuring its usability.
+                </li>
+                <li>
+                    Additionally, I was in charge of gathering Sustainable Development Goals (SDG) data and inputting it into the SDG website, which we developed using <b>WordPress</b> . Furthermore, I oversaw the management of social media platforms and websites for the data management office.
+                </li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="group-instance">
+            <div class="header">
+                <h2>Project Intern &#8226; <a href="https://mam.tubitak.gov.tr/">TÜBİTAK Marmara Research Center</a> &#8226; <i>İstanbul, Turkey</i></h2>
+                <span class="duration">June - Aug 2021</span>
+            </div>
+
+            <p>
+            <ul>
+                <li>
+                    I developed a <b>C#</b> automation tool specifically tailored for the employees of the Polar Research Institute to facilitate their scientific expeditions.
+                </li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="group-instance">
+            <div class="header">
+                <h2>Project Intern &#8226; <a href="https://www.sage.tubitak.gov.tr/">Tübitak Sage</a> &#8226; <i>Ankara, Turkey</i></h2>
+                <span class="duration">Jan - Feb 2021</span>
+            </div>
+
+            <p>
+            <ul>
+                <li>
+                    I implemented <b>socket programming</b> utilizing a structured approach for sender and receiver systems. Through this, I facilitated communication between systems using the <b>UDP protocol</b>.
+                </li>
+                <li>
+                    Additionally, I developed a system for transmitting files using <b>TFTP</b>.
+                </li>
+            </ul>
+            </p>
+        </div>
+
+    </section>
+
+    <section class="projects group">
+        <h1>Other <i class="fa fa-tags"></i></h1>
+        <p>
+        <ul>
+            <li>
+                <a href="https://ataunirocketteam.com/">AtaUni Rocket Team</a> ∷ I've served as a co-leader of the rocket team since its establishment, and together with our team, we've developed 9 distinct rockets. During this time, I actively participated in team management and avionics unit. My responsibilities included writing the rocket's control systems, developing ground stations, managing flight cards, and designing. We achieved first place in the TEKNOFEST aviation and space competition held in Turkey. Additionally, we were the finalist team in the IREC rocket competition held in the United States.
+            </li>
+        </ul>
+        </p>
+    </section>
+
+    <section class="skills group">
+        <h1>Skills <i class="fa fa-flask"></i></h1>
+        <div class="group-instance">
+            <p>
+            <ul>
+                <li>
+                    <strong>Languages ∷</strong> JavaScript and TypeScript (browser and node.js/deno), Kotlin, Java, C++, C, C#
+                </li>
+                <li>
+                    <strong>Frameworks ∷</strong> Javascript {React.js, Express.js, Next.js}, Java/Kotlin {Spring}, C++/Python
+                </li>
+                <li>
+                    <strong>Development Tools & Platforms ∷</strong> Git, Bash/ZSH, Kafka, Docker, Kubernetes
+                </li>
+                <li>
+                    <strong>Concepts ∷</strong> Object-oriented programming, API design, automation, Event Base Architecture, workflow optimization
+                </li>
+                <li>
+                    <strong>Test Automation ∷</strong> Writing and automation of tests using tools such as Jest, Cypress, Playwright, Test Containers etc.
+                </li>
+                <li>
+                    <strong>Management and Communication Skills ∷</strong> Agile and Scrum, teamwork, problem-solving, and communication abilities.
+                </li>
+            </ul>
+            </p>
+
+        </div>
+
+    </section>
+
+
+</section>
+
+<section class="sheet padding-10mm">
+
+    <section class="education group">
+        <h1>Education <i class="fa fa-graduation-cap"></i></h1>
+
+        <div class="group-instance">
+            <div class="header">
+                <h2>&#8226; Ataturk University &#8226; Computer Engineering  &#8226; <i>Undergrad</i></h2>
+                <span class="duration">2017 - 2022</span>
+            </div>
+            <div class="header">
+                <h2>&#8226; Ataturk University, Institute of Science &#8226; Optics and Photonics &#8226; <i>Master's Degree</i></h2>
+                <span class="duration">2023 - ongoing</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="additional-work group">
+        <h1>Additional/Voluntary work <i class="fa fa-users"></i></h1>
+
+        <div class="group-instance">
+            <p>
+            <ul>
+                <li>
+                    <strong>ATUGEM Technology Club ∷</strong> We arranged technology competitions for students within the student community and conducted multiple weeks of software training programs.
+                </li>
+                <li>
+                    <strong>Turkey Technology Team Foundation ∷ </strong>
+                    Within the foundation, I delivered artificial intelligence and mobile programming training to high school/middle school students for a duration of 10 months. Additionally, I served as a mentor, providing support for the projects they developed.
+                </li>
+            <li>
+                <strong>Ataturk University Computer and IT Club ∷ </strong>
+                Within the club, we arranged conferences featuring experienced professionals in the software field. Additionally, we conducted software courses.
+            </li>
+            </ul>
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="additional-work group">
+        <h1>Interests and Activities <i class="fa fa-podcast"></i></h1>
+
+        <div class="group-instance">
+            <p>
+            <ul>
+                <li>
+                    Since my childhood, I've held a deep passion for aviation, with a particular fascination for rocket science. Throughout my university years, I founded several rocket teams, including the <a href="https://www.altairrocketteam.com/">Altair Rocket Team</a> and <a href="https://ataunirocketteam.com//">AtaUni Rocket Team</a>. I persist in providing support to the students involved and sharing my experiences with them.
+                </li>
+                <li>
+                    During my leisure time, I engage in sports activities such as horse riding, skiing, and tennis.
+                </li>
+            </ul>
+            <p>
+            </p>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
