@@ -1,0 +1,19 @@
+image: node:22
+
+pages:
+  stage: deploy
+  script:
+    - corepack enable
+    - pnpm install --frozen-lockfile
+    - export NEXT_PUBLIC_BASE_PATH="${NEXT_PUBLIC_BASE_PATH:-/${CI_PROJECT_NAME}}"
+    - pnpm run export
+    - rm -rf public
+    - mv out public
+    - touch public/.nojekyll
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+
