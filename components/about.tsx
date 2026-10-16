@@ -12,7 +12,8 @@ export function About() {
           <p className="text-muted-foreground leading-relaxed mb-4">
               My work includes a payment pipeline that processes 200 million messages daily,
               shared configuration services with SDKs for multiple languages, and an internal
-              automation tool I started from scratch that is now used by more than 20 teams.
+              cron-driven automation tool I built from scratch with Deno and PostgreSQL,
+              now used by more than 20 teams.
               I enjoy owning problems from the first discussion through production and improving
               the tools and workflows engineers use every day.
           </p>
