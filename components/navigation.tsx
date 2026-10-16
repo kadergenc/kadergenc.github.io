@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 
 const navItems = [
@@ -11,9 +13,12 @@ const navItems = [
   { name: "Achievements", href: "#achievements" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
+  { name: "Resume", href: "/resume/" },
 ]
 
 export function Navigation() {
+  const pathname = usePathname()
+  const itemHref = (href: string) => href.startsWith("#") && pathname !== "/" ? `/${href}` : href
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -21,6 +26,7 @@ export function Navigation() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
     }
+    handleScroll()
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -28,30 +34,33 @@ export function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/80 backdrop-blur-md border-b border-border" : "bg-transparent"
+        isScrolled || isMobileMenuOpen ? "bg-background/80 backdrop-blur-md border-b border-border" : "bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <a href="#" className="text-xl font-semibold text-foreground">
+          <Link href="/" className="text-xl font-semibold text-foreground">
             Portfolio
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-5 lg:gap-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                href={itemHref(item.href)}
+                aria-current={item.href === pathname ? "page" : undefined}
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors aria-[current=page]:text-foreground aria-[current=page]:font-semibold"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
 
           {/* Mobile Menu Button */}
           <Button
+            aria-label={isMobileMenuOpen ? "Close navigation" : "Open navigation"}
+            aria-expanded={isMobileMenuOpen}
             variant="ghost"
             size="icon"
             className="md:hidden"
@@ -65,14 +74,15 @@ export function Navigation() {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 flex flex-col gap-4">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                href={itemHref(item.href)}
+                aria-current={item.href === pathname ? "page" : undefined}
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors aria-[current=page]:text-foreground aria-[current=page]:font-semibold"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         )}

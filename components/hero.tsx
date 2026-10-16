@@ -1,3 +1,6 @@
+import Link from "next/link"
+import { ArrowUpRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import profilePhoto from "@/public/images/profile-photo.jpg"
 
@@ -23,7 +26,10 @@ export function Hero() {
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 text-balance">Kader Genç</h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-4">Software Developer</p>
-            <p className="text-lg text-muted-foreground max-w-2xl text-pretty">  I like building simple things that work well and actually make life easier.</p>
+            <p className="text-lg text-muted-foreground max-w-2xl text-pretty">I build backend systems, payment platforms, and tools that make engineering teams' work easier.</p>
+            <Button asChild variant="outline" className="mt-8">
+              <Link href="/resume/">View resume <ArrowUpRight aria-hidden="true" /></Link>
+            </Button>
           </div>
         </div>
       </div>
