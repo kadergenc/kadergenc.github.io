@@ -26,10 +26,7 @@ export function Projects() {
   return (
     <section id="projects" className="py-24 px-6 bg-muted/30">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Projects</h2>
-        <p className="text-muted-foreground mb-12 leading-relaxed">
-          Selected projects showcasing my work across different technologies and domains.
-        </p>
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">Projects</h2>
 
         <div className="space-y-12">
           {projects.map((project, index) => (
