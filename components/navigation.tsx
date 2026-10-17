@@ -12,6 +12,7 @@ const navItems = [
   { name: "Articles", href: "#articles" },
   { name: "Achievements", href: "#achievements" },
   { name: "Projects", href: "#projects" },
+  { name: "Library", href: "#library" },
   { name: "Contact", href: "#contact" },
   { name: "Resume", href: "/resume/" },
 ]
@@ -44,7 +45,7 @@ export function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-5 lg:gap-8">
+          <div className="hidden lg:flex items-center gap-5 xl:gap-8">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -63,7 +64,7 @@ export function Navigation() {
             aria-expanded={isMobileMenuOpen}
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="lg:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -72,7 +73,7 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 flex flex-col gap-4">
+          <div className="lg:hidden mt-4 pb-4 flex flex-col gap-4">
             {navItems.map((item) => (
               <Link
                 key={item.name}
