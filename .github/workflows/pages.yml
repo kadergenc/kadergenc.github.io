@@ -27,7 +27,11 @@ jobs:
 
       - run: corepack enable
 
-      - run: pnpm install --frozen-lockfile
+      - name: Pin pnpm version
+        run: corepack prepare pnpm@12.14.0 --activate
+
+      - name: Install dependencies and allow sharp build
+        run: pnpm install --frozen-lockfile --allow-build=sharp
 
       - name: Set NEXT_PUBLIC_BASE_PATH
         run: |
