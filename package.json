@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "export": "next build",
+    "build": "node scripts/sync-library.mjs && next build",
+    "dev": "node scripts/sync-library.mjs && next dev",
+    "export": "node scripts/sync-library.mjs && next build",
+    "sync:library": "node scripts/sync-library.mjs --refresh",
+    "test:library": "node --test scripts/sync-library.test.mjs",
     "lint": "eslint .",
     "start": "next start"
   },
