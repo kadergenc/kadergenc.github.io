@@ -23,11 +23,13 @@
 .role { margin-top: 10px !important; font-weight: 700; color: #386361; }
 .role span { font-weight: 400; }
 .accent { height: 3px; width: 104px; background: #8eafac; border-radius: 2px; margin: 16px auto; }
-.summary { max-width: 760px; margin: 0 auto !important; color: #456d6a; font-style: italic; }
+.summary { text-align: left; color: #303b3b; }
 .contacts { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px 16px; padding: 14px 0; margin-top: 22px; border-top: 1px solid #c6d8d5; border-bottom: 1px solid #c6d8d5; font-size: 12px; overflow-wrap: anywhere; }
 .section { margin-top: 24px; }
 .section h2 { border-left: 4px solid #306d6a; border-bottom: 1px solid #bfd3d0; padding-left: 10px; margin-bottom: 13px; font-family: Georgia, serif; font-size: 22px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; line-height: 1.35; color: #263c3c; break-after: avoid; }
-.stack + .stack { margin-top: 10px; }
+.stack + .stack { margin-top: 5px; }
+.availability { margin-top: 8px !important; font-size: 12px; color: #4e6563; }
+.leadershipRoles { margin: 6px 0 8px; padding-left: 19px; }
 .entryHeading { display: flex; justify-content: space-between; align-items: baseline; gap: 8px 20px; }
 .entryHeading h3, .entry h3 { font-size: 15px; font-weight: 700; }
 .entryHeading h3 span { font-weight: 600; }

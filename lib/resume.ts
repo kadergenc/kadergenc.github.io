@@ -1,17 +1,22 @@
 export const profile = {
   name: "Kader Genç",
-  title: "Software Developer",
+  title: "Software Engineer",
   focus: "Backend engineering · Payment systems · Developer tooling",
-  summary: "Software Developer focused on backend engineering for payment and advertising platforms. Delivered a payment pipeline processing 200 million messages daily, built shared configuration services, and created a cron-driven automation tool using Deno and PostgreSQL, used by 20+ teams. Experienced in event-driven systems, production troubleshooting, and CI/CD.",
+  summary: "Software Engineer building payment systems and shared backend platforms. Delivered a pipeline processing 200 million messages daily and built a Deno/PostgreSQL automation tool with cron jobs, used by 20+ teams.",
   email: "kadergen1@gmail.com",
+  location: "Ankara, Türkiye",
+  availability: "Open to remote roles and international relocation with visa sponsorship",
   website: "https://kadergenc.github.io",
   github: "https://github.com/kadergenc",
   linkedin: "https://www.linkedin.com/in/kadergenc/",
 }
 
-export const coreStack = [
-  { title: "Languages & backend", detail: "Go, Java, Kotlin, TypeScript/JavaScript, Python, SQL · Spring, Node.js, NestJS, Deno · APIs, microservices, event-driven systems, SDK development." },
-  { title: "Data, infrastructure & practices", detail: "Kafka, Kafka Streams, PostgreSQL, Couchbase · Docker, Kubernetes, GitLab CI/CD · Heap analysis, application-level throttling, test automation, workflow automation." },
+export const technicalSkills = [
+  { title: "Languages", detail: "Go, Java, Kotlin, TypeScript/JavaScript, Python, SQL" },
+  { title: "Backend", detail: "Spring, Node.js, NestJS, Deno · APIs, microservices, SDKs" },
+  { title: "Data", detail: "PostgreSQL, Couchbase, Kafka, Kafka Streams" },
+  { title: "Infrastructure", detail: "Docker, Kubernetes, GitLab CI/CD" },
+  { title: "Testing", detail: "Unit tests for Node.js, JVM/Kotlin, and Go · Integration test automation with Testcontainers" },
 ]
 
 type Experience = {
@@ -110,8 +115,13 @@ export const selectedProjects = [
 ]
 
 export const leadership = {
-  title: "AtaUni Rocket Team · Co-leader",
+  title: "AtaUni Rocket Team · Avionics & Team Leadership",
   url: "https://ataunirocketteam.com/",
+  roles: [
+    "Avionics · 2018–2020",
+    "Co-leader · 2020–2022",
+    "IREC team co-leader · 2021–2023",
+  ],
   detail: "Contributed to team leadership and avionics, developing rocket control software, ground stations, and flight-card systems. The team achieved first place at TEKNOFEST and was a finalist at IREC in the United States.",
 }
 

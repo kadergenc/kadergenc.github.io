@@ -4,11 +4,11 @@ import Link from "next/link"
 import { ArrowLeft, Download } from "lucide-react"
 import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
-import { coreStack, education, experiences, leadership, profile, selectedProjects, voluntaryWork } from "@/lib/resume"
+import { technicalSkills, education, experiences, leadership, profile, selectedProjects, voluntaryWork } from "@/lib/resume"
 import styles from "./resume.module.css"
 
 export const metadata: Metadata = {
-  title: "Resume | Kader Genç — Software Developer",
+  title: "Resume | Kader Genç — Software Engineer",
   description: profile.summary,
 }
 
@@ -37,7 +37,7 @@ export default function ResumePage() {
         <article className={styles.document} aria-label="Kader Genç resume">
           <header className={styles.header}>
             <h1>{profile.name}</h1>
-            <p className={styles.role}>{profile.title} <span>· Backend Engineering</span></p>
+            <p className={styles.role}>{profile.title} <span>· Backend</span></p>
             <div className={styles.accent} />
             <p className={styles.summary}>{profile.summary}</p>
             <div className={styles.contacts}>
@@ -45,11 +45,13 @@ export default function ResumePage() {
               <a href={profile.website}>kadergenc.github.io</a>
               <a href={profile.linkedin}>linkedin.com/in/kadergenc</a>
               <a href={`mailto:${profile.email}`}>{profile.email}</a>
+              <span>{profile.location}</span>
             </div>
+            <p className={styles.availability}>{profile.availability}</p>
           </header>
 
-          <Section title="Core Stack">
-            {coreStack.map((group) => <p key={group.title} className={styles.stack}><strong>{group.title}:</strong> {group.detail}</p>)}
+          <Section title="Technical Skills">
+            {technicalSkills.map((group) => <p key={group.title} className={styles.stack}><strong>{group.title}:</strong> {group.detail}</p>)}
           </Section>
 
           <Section title="Experience">
@@ -102,7 +104,13 @@ export default function ResumePage() {
             </Section>
 
             <Section title="Leadership & Achievements">
-              <div className={styles.entry}><h3><a href={leadership.url}>{leadership.title}</a></h3><p>{leadership.detail}</p></div>
+              <div className={styles.entry}>
+                <h3><a href={leadership.url}>{leadership.title}</a></h3>
+                <ul className={styles.leadershipRoles}>
+                  {leadership.roles.map((role) => <li key={role}>{role}</li>)}
+                </ul>
+                <p>{leadership.detail}</p>
+              </div>
             </Section>
 
             <Section title="Volunteering">
