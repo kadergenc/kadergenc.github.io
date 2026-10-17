@@ -3,6 +3,14 @@ import { ArrowUpRight } from "lucide-react"
 
 const articles = [
   {
+    title: "Debugging a Go Memory Leak: From OOM to Stable with pprof",
+    description:
+      "Tracing a production Go memory leak with pprof, reducing timezone allocation overhead, and restoring stable memory usage in a Kafka consumer.",
+    date: "Feb 2026",
+    readTime: "7 min read",
+    link: "https://medium.com/trendyol-tech/debugging-a-go-memory-leak-from-oom-to-stable-with-pprof-7b3808d76890",
+  },
+  {
     title: "What is the CAP theorem?",
     description:
       "A deep dive into architectural patterns for building large-scale web applications using Next.js and React Server Components.",
