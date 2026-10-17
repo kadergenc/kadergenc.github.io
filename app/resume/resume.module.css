@@ -1,56 +1,68 @@
 .page {
-  background: #f3f6f5;
+  --resume-ink: #292c27;
+  --resume-muted: #5c6257;
+  --resume-accent: #485c3c;
+  --resume-line: #dee2d8;
+  background: #f3f3ee;
   min-height: 100vh;
-  color: #293c3c;
+  color: var(--resume-ink);
 }
-.main { max-width: 1060px; margin: 0 auto; padding: 110px 24px 64px; }
-.toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
+.main { max-width: 1000px; margin: 0 auto; padding: 110px 24px 64px; }
+.toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 24px; color: var(--resume-muted); }
+.toolbar > a:focus-visible, .document a:focus-visible { outline: 2px solid var(--resume-accent); outline-offset: 4px; border-radius: 2px; }
 .document {
   background: white;
   padding: 52px 56px;
-  box-shadow: 0 8px 40px #203b3b0c;
+  border: 1px solid var(--resume-line);
+  border-radius: 8px;
+  box-shadow: 0 6px 28px #292c2706;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  line-height: 1.55;
-  color: #303b3b;
+  line-height: 1.65;
+  color: var(--resume-ink);
 }
-.document a { color: #306d6a; text-decoration: none; }
+.document a { color: var(--resume-accent); text-decoration: none; text-underline-offset: 3px; }
 .document a:hover { text-decoration: underline; }
 .document h1, .document h2, .document h3, .document p { margin: 0; }
 .document strong { font-weight: 700; }
-.header { text-align: center; }
-.header h1 { font-family: Georgia, serif; font-size: 42px; font-weight: 700; letter-spacing: 3px; line-height: 1.2; color: #263c3c; }
-.role { margin-top: 10px !important; font-weight: 700; color: #386361; }
-.role span { font-weight: 400; }
-.accent { height: 3px; width: 104px; background: #8eafac; border-radius: 2px; margin: 16px auto; }
-.summary { text-align: left; color: #303b3b; }
-.contacts { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px 16px; padding: 14px 0; margin-top: 22px; border-top: 1px solid #c6d8d5; border-bottom: 1px solid #c6d8d5; font-size: 12px; overflow-wrap: anywhere; }
-.section { margin-top: 24px; }
-.section h2 { border-left: 4px solid #306d6a; border-bottom: 1px solid #bfd3d0; padding-left: 10px; margin-bottom: 13px; font-family: Georgia, serif; font-size: 22px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; line-height: 1.35; color: #263c3c; break-after: avoid; }
-.stack + .stack { margin-top: 5px; }
-.availability { margin-top: 8px !important; font-size: 12px; color: #4e6563; }
+.header { text-align: left; }
+.header h1 { font-size: 42px; font-weight: 700; letter-spacing: -1.4px; line-height: 1.15; color: var(--resume-accent); }
+.role { margin-top: 10px !important; font-weight: 700; color: var(--resume-accent); }
+.role span { font-weight: 400; color: var(--resume-muted); }
+.accent { height: 3px; width: 56px; background: #8c9a7e; border-radius: 2px; margin: 20px 0; }
+.summary { text-align: left; color: var(--resume-muted); }
+.contacts { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 6px 18px; padding: 14px 0; margin-top: 22px; border-top: 1px solid var(--resume-line); border-bottom: 1px solid var(--resume-line); font-size: 12px; overflow-wrap: anywhere; }
+.section { margin-top: 30px; }
+.section h2 { border-bottom: 2px solid #a4af98; padding-bottom: 8px; margin-bottom: 14px; font-size: 17px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; line-height: 1.4; color: var(--resume-ink); break-after: avoid; }
+.keyResult { color: var(--resume-ink); font-weight: 700; }
+.stack { display: grid; grid-template-columns: 108px minmax(0, 1fr); gap: 12px; }
+.stack strong { color: var(--resume-accent); }
+.stack + .stack { margin-top: 7px; }
+.availability { margin-top: 8px !important; font-size: 12px; color: var(--resume-muted); }
 .leadershipRoles { margin: 6px 0 8px; padding-left: 19px; }
 .entryHeading { display: flex; justify-content: space-between; align-items: baseline; gap: 8px 20px; }
-.entryHeading h3, .entry h3 { font-size: 15px; font-weight: 700; }
+.entryHeading h3, .entry h3 { font-size: 16px; font-weight: 700; }
 .entryHeading h3 span { font-weight: 600; }
-.entryHeading > p { font-size: 12px; font-weight: 600; color: #386361; white-space: nowrap; }
-.jobTitle { font-weight: 600; color: #4e6563; margin: 3px 0 7px !important; }
-.roles { margin: 10px 0 12px; padding-left: 10px; border-left: 2px solid #cadbd8; font-size: 12px; color: #536966; }
+.entryHeading > p { font-size: 12px; font-weight: 600; color: var(--resume-accent); white-space: nowrap; }
+.jobTitle { font-weight: 600; color: var(--resume-muted); margin: 3px 0 7px !important; }
+.roles { margin: 10px 0 12px; padding-left: 10px; border-left: 2px solid #a4af98; font-size: 12px; color: var(--resume-muted); }
 .roles p { display: flex; justify-content: space-between; gap: 8px 16px; }
 .roles span { white-space: nowrap; }
-.highlights { list-style: square; padding-left: 19px; margin: 0; }
+.highlights { list-style: disc; padding-left: 19px; margin: 0; }
 .highlights li { padding-left: 1px; margin-bottom: 9px; break-inside: avoid; }
-.highlights li::marker { color: #306d6a; }
-.earlier { display: grid; gap: 17px; }
+.highlights li::marker { color: var(--resume-accent); }
+.earlier { display: grid; gap: 22px; }
 .entry { break-inside: avoid; }
 .projectLink { font-size: 12px; }
 .volunteering + .volunteering { margin-top: 8px; }
 @media (max-width: 640px) {
   .main { padding: 90px 12px 32px; }
-  .document { padding: 28px 20px; font-size: 13px; }
+  .document { padding: 28px 20px; font-size: 13px; border-radius: 6px; }
   .header h1 { font-size: 34px; }
-  .role span { display: block; }
-  .section h2 { font-size: 19px; }
+  .role span { display: inline; }
+  .toolbar { gap: 12px; }
+  .stack { grid-template-columns: 1fr; gap: 1px; }
+  .section h2 { font-size: 15px; }
   .entryHeading, .roles p { flex-direction: column; gap: 2px; }
   .roles p + p { margin-top: 6px; }
 }
@@ -59,15 +71,18 @@
   .screenOnly { display: none !important; }
   .page { background: white; min-height: auto; }
   .main { max-width: none; padding: 0; margin: 0; }
-  .document { padding: 0; box-shadow: none; font-size: 9.5pt; line-height: 1.43; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
-  .header h1 { font-size: 29pt; }
+  .document { padding: 0; border: 0; border-radius: 0; box-shadow: none; font-size: 9.5pt; line-height: 1.43; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .header h1 { font-size: 29pt; letter-spacing: -0.8px; }
   .role { margin-top: 5px !important; font-size: 10pt; }
   .role span { display: inline; }
-  .accent { margin: 10px auto; }
+  .accent { margin: 10px 0; }
   .summary { max-width: 174mm; font-size: 9.5pt; }
   .contacts { margin-top: 13px; padding: 10px 0; font-size: 8pt; gap: 4px 12px; }
   .section { margin-top: 16px; }
-  .section h2 { font-size: 16pt; margin-bottom: 9px; }
+  .section h2 { font-size: 11pt; border-bottom-width: 1pt; padding-bottom: 5px; margin-bottom: 9px; }
+  .stack { grid-template-columns: 25mm minmax(0, 1fr); gap: 3mm; }
+  .stack + .stack { margin-top: 4px; }
+  .availability { font-size: 8pt; }
   .entryHeading { flex-direction: row; gap: 8px; }
   .entryHeading h3, .entry h3 { font-size: 10.5pt; }
   .entryHeading > p { font-size: 8.5pt; }

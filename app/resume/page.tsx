@@ -16,6 +16,14 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
   return <section className={styles.section}><h2>{title}</h2>{children}</section>
 }
 
+function HighlightedText({ text }: { text: string }) {
+  return text.split(/(200 million messages daily|20\+ teams|68%)/g).map((part, index) =>
+    /^(200 million messages daily|20\+ teams|68%)$/.test(part)
+      ? <strong className={styles.keyResult} key={index}>{part}</strong>
+      : part,
+  )
+}
+
 export default function ResumePage() {
   const [trendyol, ...earlierExperiences] = experiences
 
@@ -64,7 +72,7 @@ export default function ResumePage() {
               <p><strong>{trendyol.roles?.join(" → ")}</strong></p>
             </div>
             <ul className={styles.highlights}>
-              {trendyol.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}
+              {trendyol.highlights.map((highlight) => <li key={highlight}><HighlightedText text={highlight} /></li>)}
             </ul>
           </Section>
 
