@@ -1,0 +1,478 @@
+[
+  {
+    "type": "series",
+    "title": "Disenchantment",
+    "imdbId": "tt5363918",
+    "status": "completed",
+    "loggedAt": "2023-12",
+    "rating": 9
+  },
+  {
+    "type": "series",
+    "title": "Maniac",
+    "imdbId": "tt5580146",
+    "status": "completed",
+    "loggedAt": "2024-01",
+    "rating": 6
+  },
+  {
+    "type": "series",
+    "title": "Kidding",
+    "imdbId": "tt7375404",
+    "status": "completed",
+    "loggedAt": "2024-01",
+    "rating": 6
+  },
+  {
+    "type": "series",
+    "title": "The Haunting of Hill House",
+    "imdbId": "tt6763664",
+    "status": "completed",
+    "loggedAt": "2024-02",
+    "rating": 10
+  },
+  {
+    "type": "series",
+    "title": "Midnight Mass",
+    "imdbId": "tt10574558",
+    "status": "completed",
+    "loggedAt": "2024-02",
+    "rating": 10
+  },
+  {
+    "type": "series",
+    "title": "Fargo",
+    "imdbId": "tt2802850",
+    "status": "completed",
+    "loggedAt": "2024-04",
+    "rating": 10
+  },
+  {
+    "type": "series",
+    "title": "Erased",
+    "imdbId": "tt5249462",
+    "status": "completed",
+    "loggedAt": "2024-04",
+    "rating": 5
+  },
+  {
+    "type": "series",
+    "title": "House of the Dragon",
+    "imdbId": "tt11198330",
+    "status": "completed",
+    "loggedAt": "2024-04",
+    "rating": 8
+  },
+  {
+    "type": "series",
+    "title": "The Last Man on Earth",
+    "imdbId": "tt3230454",
+    "status": "completed",
+    "loggedAt": "2024-04",
+    "rating": 6
+  },
+  {
+    "type": "series",
+    "title": "Shōgun",
+    "imdbId": "tt2788316",
+    "status": "completed",
+    "loggedAt": "2024-04",
+    "rating": 8
+  },
+  {
+    "type": "series",
+    "title": "3 Body Problem",
+    "imdbId": "tt13016388",
+    "status": "completed",
+    "loggedAt": "2024-05",
+    "rating": 5
+  },
+  {
+    "type": "series",
+    "title": "Severance",
+    "imdbId": "tt11280740",
+    "status": "completed",
+    "loggedAt": "2024-05",
+    "rating": 10
+  },
+  {
+    "type": "series",
+    "title": "Presumed Innocent",
+    "imdbId": "tt17677860",
+    "status": "completed",
+    "loggedAt": "2024-08",
+    "rating": 8
+  },
+  {
+    "type": "series",
+    "title": "Succession",
+    "imdbId": "tt7660850",
+    "status": "completed",
+    "loggedAt": "2025-01",
+    "rating": 10
+  },
+  {
+    "type": "series",
+    "title": "Caliphate",
+    "imdbId": "tt11398870",
+    "status": "completed",
+    "loggedAt": "2025-04",
+    "rating": 7
+  },
+  {
+    "type": "series",
+    "title": "The Rehearsal",
+    "imdbId": "tt10802170",
+    "status": "completed",
+    "loggedAt": "2025-09",
+    "rating": 8,
+    "progress": "S1"
+  },
+  {
+    "type": "movie",
+    "title": "WALL·E",
+    "imdbId": "tt0910970",
+    "status": "completed",
+    "loggedAt": "2023-10",
+    "rating": 8
+  },
+  {
+    "type": "movie",
+    "title": "I'm Thinking of Ending Things",
+    "imdbId": "tt7939766",
+    "status": "completed",
+    "loggedAt": "2023-10",
+    "rating": 10
+  },
+  {
+    "type": "movie",
+    "title": "Killers of the Flower Moon",
+    "imdbId": "tt5537002",
+    "status": "completed",
+    "loggedAt": "2023-11",
+    "rating": 9
+  },
+  {
+    "type": "movie",
+    "title": "All Quiet on the Western Front",
+    "imdbId": "tt1016150",
+    "status": "completed",
+    "loggedAt": "2023-11",
+    "rating": 8
+  },
+  {
+    "type": "movie",
+    "title": "The Devil All the Time",
+    "imdbId": "tt7395114",
+    "status": "completed",
+    "loggedAt": "2023-12",
+    "rating": 8
+  },
+  {
+    "type": "movie",
+    "title": "Speak No Evil",
+    "imdbId": "tt14253846",
+    "status": "completed",
+    "loggedAt": "2024-01",
+    "rating": 9
+  },
+  {
+    "type": "movie",
+    "title": "Sound of Metal",
+    "imdbId": "tt5363618",
+    "status": "completed",
+    "loggedAt": "2024-04",
+    "rating": 8
+  },
+  {
+    "type": "movie",
+    "title": "Past Lives",
+    "imdbId": "tt13238346",
+    "status": "completed",
+    "loggedAt": "2024-04",
+    "rating": 8
+  },
+  {
+    "type": "movie",
+    "title": "Birdman",
+    "imdbId": "tt2562232",
+    "status": "completed",
+    "loggedAt": "2024-04",
+    "rating": 7
+  },
+  {
+    "type": "movie",
+    "title": "The Worst Person in the World",
+    "imdbId": "tt10370710",
+    "status": "completed",
+    "loggedAt": "2024-05",
+    "rating": 7
+  },
+  {
+    "type": "movie",
+    "title": "Uncut Gems",
+    "imdbId": "tt5727208",
+    "status": "completed",
+    "loggedAt": "2024-05",
+    "rating": 6
+  },
+  {
+    "type": "movie",
+    "title": "Dinner in America",
+    "imdbId": "tt9058654",
+    "status": "completed",
+    "loggedAt": "2024-05",
+    "rating": 8
+  },
+  {
+    "type": "movie",
+    "title": "Oldboy",
+    "imdbId": "tt0364569",
+    "status": "completed",
+    "loggedAt": "2024-06",
+    "rating": 10
+  },
+  {
+    "type": "movie",
+    "title": "The Chaser",
+    "imdbId": "tt1190539",
+    "status": "completed",
+    "loggedAt": "2024-06",
+    "rating": 9
+  },
+  {
+    "type": "movie",
+    "title": "In Bruges",
+    "imdbId": "tt0780536",
+    "status": "completed",
+    "loggedAt": "2024-07",
+    "rating": 7
+  },
+  {
+    "type": "movie",
+    "title": "Poor Things",
+    "imdbId": "tt14230458",
+    "status": "completed",
+    "loggedAt": "2024-08",
+    "rating": 7
+  },
+  {
+    "type": "movie",
+    "title": "The Zone of Interest",
+    "imdbId": "tt7160372",
+    "status": "completed",
+    "loggedAt": "2024-09",
+    "rating": 6
+  },
+  {
+    "type": "movie",
+    "title": "Godland",
+    "imdbId": "tt19623228",
+    "status": "completed",
+    "loggedAt": "2024-09",
+    "rating": 7
+  },
+  {
+    "type": "movie",
+    "title": "The Iron Claw",
+    "imdbId": "tt21064584",
+    "status": "completed",
+    "loggedAt": "2024-10",
+    "rating": 7
+  },
+  {
+    "type": "movie",
+    "title": "Parasite",
+    "imdbId": "tt6751668",
+    "status": "completed",
+    "loggedAt": "2024-10",
+    "rating": 10
+  },
+  {
+    "type": "movie",
+    "title": "District 9",
+    "imdbId": "tt1136608",
+    "status": "completed",
+    "loggedAt": "2024-10",
+    "rating": 10
+  },
+  {
+    "type": "movie",
+    "title": "Tell No One",
+    "imdbId": "tt0362225",
+    "status": "completed",
+    "loggedAt": "2024-10",
+    "rating": 9
+  },
+  {
+    "type": "movie",
+    "title": "Perfect Days",
+    "imdbId": "tt27503384",
+    "status": "completed",
+    "loggedAt": "2024-10",
+    "rating": 7
+  },
+  {
+    "type": "movie",
+    "title": "Strange Darling",
+    "imdbId": "tt22375054",
+    "status": "completed",
+    "loggedAt": "2024-10",
+    "rating": 8
+  },
+  {
+    "type": "movie",
+    "title": "The Whale",
+    "imdbId": "tt13833688",
+    "status": "completed",
+    "loggedAt": "2024-10",
+    "rating": 9
+  },
+  {
+    "type": "movie",
+    "title": "Longlegs",
+    "imdbId": "tt23468450",
+    "status": "completed",
+    "loggedAt": "2024-10",
+    "rating": 4
+  },
+  {
+    "type": "movie",
+    "title": "Edge of Tomorrow",
+    "imdbId": "tt1631867",
+    "status": "completed",
+    "loggedAt": "2025-02",
+    "rating": 9
+  },
+  {
+    "type": "movie",
+    "title": "Hereditary",
+    "imdbId": "tt7784604",
+    "status": "completed",
+    "loggedAt": "2025-04",
+    "rating": 10
+  },
+  {
+    "type": "movie",
+    "title": "The Handmaiden",
+    "imdbId": "tt4016934",
+    "status": "completed",
+    "loggedAt": "2025-04",
+    "rating": 10
+  },
+  {
+    "type": "movie",
+    "title": "The Humans",
+    "imdbId": "tt10023286",
+    "status": "completed",
+    "loggedAt": "2025-04",
+    "rating": 5
+  },
+  {
+    "type": "movie",
+    "title": "Bad Times at the El Royale",
+    "imdbId": "tt6628394",
+    "status": "completed",
+    "loggedAt": "2025-05",
+    "rating": 8
+  },
+  {
+    "type": "movie",
+    "title": "Children of Men",
+    "imdbId": "tt0206634",
+    "status": "completed",
+    "loggedAt": "2025-05",
+    "rating": 10
+  },
+  {
+    "type": "movie",
+    "title": "Anora",
+    "imdbId": "tt28607951",
+    "status": "completed",
+    "loggedAt": "2025-09",
+    "rating": 8
+  },
+  {
+    "type": "movie",
+    "title": "Raw",
+    "imdbId": "tt4954522",
+    "status": "completed",
+    "loggedAt": "2025-09",
+    "rating": 7
+  },
+  {
+    "type": "movie",
+    "title": "Dune: Part Two",
+    "imdbId": "tt15239678",
+    "status": "completed",
+    "loggedAt": "2025-10",
+    "rating": 8
+  },
+  {
+    "type": "movie",
+    "title": "Weapons",
+    "imdbId": "tt26581740",
+    "status": "completed",
+    "loggedAt": "2025-10",
+    "rating": 9
+  },
+  {
+    "type": "movie",
+    "title": "Bring Her Back",
+    "imdbId": "tt32246771",
+    "status": "completed",
+    "loggedAt": "2025-10",
+    "rating": 7
+  },
+  {
+    "type": "movie",
+    "title": "Presence",
+    "imdbId": "tt28249919",
+    "status": "completed",
+    "loggedAt": "2025-10",
+    "rating": 7
+  },
+  {
+    "type": "movie",
+    "title": "Nosferatu",
+    "imdbId": "tt5040012",
+    "status": "completed",
+    "loggedAt": "2025-10",
+    "rating": 8
+  },
+  {
+    "type": "book",
+    "title": "Simyacı",
+    "isbn": "9780061122415",
+    "status": "completed",
+    "loggedAt": "2023-11"
+  },
+  {
+    "type": "book",
+    "title": "Dune",
+    "isbn": "9780441172719",
+    "status": "completed",
+    "loggedAt": "2025-11"
+  },
+  {
+    "type": "book",
+    "title": "Körlük",
+    "isbn": "9780156007757",
+    "status": "completed",
+    "loggedAt": "2025-12"
+  },
+  {
+    "type": "series",
+    "title": "The Bear",
+    "imdbId": "tt14452776",
+    "status": "dropped",
+    "progress": "S2E6"
+  },
+  {
+    "type": "series",
+    "title": "Slow Horses",
+    "imdbId": "tt5875444",
+    "status": "dropped",
+    "progress": "S1E6"
+  }
+]

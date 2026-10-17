@@ -1,0 +1,20 @@
+[
+  {
+    "type": "book",
+    "isbn": "9780140328721",
+    "status": "completed",
+    "rating": 8,
+    "note": "My thoughts about the book."
+  },
+  {
+    "type": "movie",
+    "imdbId": "tt1375666",
+    "status": "completed",
+    "rating": 9
+  },
+  {
+    "type": "series",
+    "imdbId": "tt0903747",
+    "status": "in-progress"
+  }
+]
