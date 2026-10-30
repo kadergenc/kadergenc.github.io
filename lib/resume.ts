@@ -2,7 +2,7 @@ export const profile = {
   name: "Kader Genç",
   title: "Software Engineer",
   focus: "Backend engineering · Payment systems · Developer tooling",
-  summary: "Software Engineer building payment systems and shared backend platforms. Delivered a pipeline processing 200 million messages daily and built a Deno/PostgreSQL automation tool with cron jobs, used by 20+ teams.",
+  summary: "Software Engineer building payment systems and shared backend platforms, including a pipeline processing 200 million messages daily. Independently identified an unmet automation need and built a tool using TypeScript, Node.js, and PostgreSQL; it is now actively used by 20+ teams and has since gained contributions from other engineers.",
   email: "kadergen1@gmail.com",
   location: "Ankara, Türkiye",
   availability: "Open to remote roles and international relocation with visa sponsorship",
@@ -13,7 +13,7 @@ export const profile = {
 
 export const technicalSkills = [
   { title: "Languages", detail: "Go, Java, Kotlin, TypeScript/JavaScript, Python, SQL" },
-  { title: "Backend", detail: "Spring, Node.js, NestJS, Deno · APIs, microservices, SDKs" },
+  { title: "Backend", detail: "Spring, Node.js, NestJS · APIs, microservices, SDKs" },
   { title: "Data", detail: "PostgreSQL, Couchbase, Kafka, Kafka Streams" },
   { title: "Infrastructure", detail: "Docker, Kubernetes, GitLab CI/CD" },
   { title: "Testing", detail: "Unit tests for Node.js, JVM/Kotlin, and Go · Integration test automation with Testcontainers" },
@@ -45,13 +45,13 @@ export const experiences: Experience[] = [
     highlights: [
       "Replatformed a payment spending consumer using Go, Kafka, and PostgreSQL, owning delivery end to end. The pipeline processes 200 million messages daily; diagnosed memory issues through heap analysis and resolved consumer lag with application-level throttling, addressing an earlier flow that required restarts to recover under high traffic.",
       "Contributed across analysis, design, development, and production rollout of a centralized Java configuration platform with Go, JVM, and Node.js SDKs. Replaced duplicated team-level eligibility logic with a shared service supporting seller, country, region, segment, and default priorities; SDKs resolve configuration once per request and propagate it through the request context.",
-      "Initiated and built a cron-driven automation tool using Deno and PostgreSQL from scratch, drove adoption across 20+ teams, and grew contributions from engineers within and beyond the team. Integrated GitLab, Jira, vulnerability, and test-quality data sources to automate manual tracking and surface overlooked issues.",
+      "Identified an unmet need for automated engineering workflows and independently initiated and built a tool from scratch using TypeScript, Node.js, and PostgreSQL. Drove adoption across 20+ teams, where it is now actively used, and subsequently attracted contributions from engineers within and beyond the team. Integrated GitLab, Jira, vulnerability, and test-quality data sources through scheduled jobs to automate manual tracking and surface overlooked issues.",
       "Recently added AI-agent workflows to the automation tool, with adoption still at an early stage. These workflows turn a single manual trigger into task creation and sprint assignment, automating previously five-to-six-step processes such as creating work items for failing tests and coverage gaps identified through Sonar and other quality platforms.",
       "Migrated tightly coupled credit card workflows into the new payment architecture, owning delivery end to end as part of the broader payment replatforming effort.",
       "Reduced failed pipelines by 68% by correcting execution rules and removing duplicate jobs. Maintained team CI/CD pipelines, added caching, and reorganized job dependencies to shorten execution times.",
       "Previously developed advertising-domain features and services using Node.js, Go, Kotlin/Java, React, and Svelte, working with Kafka Streams, Couchbase, and PostgreSQL. Since March 2025, focused on payment and shared platform products used by other Ads teams.",
     ],
-    skills: ["Go", "Java", "Kotlin", "TypeScript", "Deno", "Node.js", "Spring", "PostgreSQL", "Kafka", "Couchbase", "GitLab CI/CD"],
+    skills: ["Go", "Java", "Kotlin", "TypeScript", "Node.js", "Spring", "PostgreSQL", "Kafka", "Couchbase", "GitLab CI/CD"],
   },
   {
     title: "Student Researcher (Part-time)",
