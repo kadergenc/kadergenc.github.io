@@ -36,7 +36,7 @@ export default function ResumePage() {
             <ArrowLeft className="size-4" aria-hidden="true" /> Back to home
           </Link>
           <Button asChild variant="outline">
-            <a href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/KaderGencResume.pdf`} download="KaderGencResume.pdf">
+            <a href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Kader_Genc_Resume.pdf`} download="Kader_Genc_Resume.pdf">
               <Download aria-hidden="true" /> Download PDF
             </a>
           </Button>
